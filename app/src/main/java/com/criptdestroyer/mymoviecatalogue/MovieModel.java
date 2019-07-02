@@ -6,6 +6,20 @@ public class MovieModel {
     private String image;
 
     public MovieModel(String title, String description, String image){
-        this.
+        this.title = title;
+        this.description = description;
+        this.image = image;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getImage() {
+        return image;
     }
 }
