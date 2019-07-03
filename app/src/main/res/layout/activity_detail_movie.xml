@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:id="@+id/detail_movie_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,14 +8,13 @@
     android:layout_marginBottom="4dp"
     android:layout_marginRight="8dp"
     android:layout_marginLeft="8dp"
-    card_view:cardCornerRadius="4dp"
     tools:context=".DetailMovieActivity">
 
     <ImageView
         android:id="@+id/img_detail_photo"
         android:layout_width="100dp"
         android:layout_height="150dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="25dp"
         android:scaleType="fitXY"
         android:contentDescription="@string/movie_image"
         tools:src="@color/colorAccent"/>
@@ -35,7 +33,7 @@
         tools:text="Title"/>
 
     <TextView
-        android:id="@+id/tv_item_price"
+        android:id="@+id/tv_detail_year"
         android:layout_below="@+id/tv_detail_title"
         android:layout_toEndOf="@+id/img_detail_photo"
         android:layout_width="match_parent"
@@ -103,6 +101,7 @@
                 android:layout_marginEnd="@dimen/activity_vertical_margin"
                 android:text="@string/title"/>
             <TextView
+                android:id="@+id/tr_tv_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="14sp"
@@ -121,6 +120,7 @@
                 android:layout_marginEnd="@dimen/activity_vertical_margin"
                 android:text="@string/year"/>
             <TextView
+                android:id="@+id/tr_tv_year"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="14sp"
