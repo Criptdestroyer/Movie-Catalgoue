@@ -3,6 +3,12 @@
     <string name="name_heroes">Movie Name</string>
     <string name="lorem">lorem ipsum dolor sit amet</string>
     <string name="movie_image">Movie Image</string>
+    <string name="description">Description</string>
+    <string name="detail">Detail Table</string>
+    <string name="title">Title</string>
+    <string name="year">Year Release</string>
+    <string name="source">Source</string>
+    <string name="source_link">https://www.themoviedb.org</string>
 
     <string-array name="data_title">
         <item>Avengers: Infinity War</item>
