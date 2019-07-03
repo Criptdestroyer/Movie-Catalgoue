@@ -6,7 +6,7 @@
     tools:context=".MainActivity">
 
     <ListView
-        android:id="@+id/movie_list"
+        android:id="@+id/lv_movie_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 

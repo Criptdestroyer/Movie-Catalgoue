@@ -14,12 +14,12 @@ public class MovieAdapter extends BaseAdapter {
     private final Context context;
     private ArrayList<Movie> movies;
 
-    public MovieAdapter(Context context) {
+    MovieAdapter(Context context) {
         this.context = context;
         movies = new ArrayList<>();
     }
 
-    public void setHeroes(ArrayList<Movie> movies) {
+    void setMovies(ArrayList<Movie> movies) {
         this.movies = movies;
     }
 
@@ -51,20 +51,20 @@ public class MovieAdapter extends BaseAdapter {
 
     private class ViewHolder {
         private TextView txtTitle;
-        private TextView txtDate;
+        private TextView txtYear;
         private TextView txtDescription;
         private ImageView imgPhoto;
 
-        public ViewHolder(View view) {
+        ViewHolder(View view) {
             txtTitle = view.findViewById(R.id.txt_title);
-            txtDate = view.findViewById(R.id.txt_date);
+            txtYear = view.findViewById(R.id.txt_year);
             txtDescription = view.findViewById(R.id.txt_description);
             imgPhoto = view.findViewById(R.id.img_photo);
         }
 
-        public void bind(Movie movie) {
+        void bind(Movie movie) {
             txtTitle.setText(movie.getTitle());
-            txtDate.setText(movie.getDate());
+            txtYear.setText(movie.getYear());
             txtDescription.setText(movie.getDescription());
             imgPhoto.setImageResource(movie.getPhoto());
         }
